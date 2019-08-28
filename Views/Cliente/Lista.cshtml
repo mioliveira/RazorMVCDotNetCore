@@ -1,0 +1,20 @@
+﻿@model List<RazorMVCDotNetCore.Models.Clientes.ClienteModel>
+
+@{
+    ViewData["Title"] = "Lista de clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>View</h1>
+
+@foreach (var item in Model)
+{
+    <label>Codigo: @item.Codigo</label>
+
+    <label>NOme: @item.Nome</label>
+
+    <label>Endereco: @item.Endereco</label>
+
+    <label>Telefone: @item.Telefone</label>
+    <br /><br /><br />
+}
