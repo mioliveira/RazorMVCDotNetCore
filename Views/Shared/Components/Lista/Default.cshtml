@@ -1,0 +1,10 @@
+﻿@model List<string>
+
+<span class="fa fa-shopping-cat fa-2x">
+    @Model.Count.ToString()
+</span>
+
+@foreach(string item in Model)
+{
+    <span>@item</span>
+}
